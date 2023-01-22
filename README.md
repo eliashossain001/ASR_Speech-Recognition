@@ -8,7 +8,7 @@ I integrated the mlflow tool to track the training history. MLflow is an MLOps t
 
 # How to use?
 
-I have tested the code through VS code script file and notebook as well. It's better to use the VS code and you should have a high computing support other than that, you are gonna fail to run this model. To be more specific, this is a powerful speech recognization model.
+I have tested the code through VS code script file and notebook as well. It's better to use the VS code and you should have a high computing support other than that, you are gonna fail to run this model. To be more specific, this is a powerful speech recognization model. If you want to run on phoneme level, the check out the Notebooks folder and open the 'STT_Wav2vec2_Base_Phoneme.ipynb' file. On the other hand, to run trough sentence level, use the Wav2Vec2_ASR_Bangla_V1.
 
 # Essential libraries
 -Pytorch, -Librosa, -Pandas, -Wav2Vec2 transformer,-CTC tokenizer
