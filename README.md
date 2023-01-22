@@ -1,8 +1,6 @@
 # ASR_Speech-Recognition
 # speech2phoneme+grapheme_bangla
-This repository is developed for the purpose of Bangla speech recognition using state-of-the-art NLP tecnique and model. We used a self supervised model (Wav2Vec2) developed by Facebook AI team to recognize speech from Bangla speech corpus. I incorporated both grapheme and phoneme as an input features. However, development is still going on. Wav2Vec 2.0 is one of the current state-of-the-art models for Automatic Speech Recognition due to a self-supervised training which is quite a new concept in this field.
-
-# I haven't used any open access dataset, I utilized custom dataset. If you want to use Common Voice/Bengali ASR data, you may change the data adapter, e.g., create a data loader and split your dataset into two/three folds: train, test and validation. However, I have experimented through train and validation data. 
+This repository is developed for the purpose of Bangla speech recognition using state-of-the-art NLP tecnique and model. We used a self supervised model (Wav2Vec2) developed by Facebook AI team to recognize speech from Bangla speech corpus. I incorporated both grapheme and phoneme as an input features. However, development is still going on. Wav2Vec 2.0 is one of the current state-of-the-art models for Automatic Speech Recognition due to a self-supervised training which is quite a new concept in this field. I haven't used any open access dataset, I utilized custom dataset. If you want to use Common Voice/Bengali ASR data, you may change the data adapter, e.g., create a data loader and split your dataset into two/three folds: train, test and validation. However, I have experimented through train and validation data. 
 
 
 # MlOps
