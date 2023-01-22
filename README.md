@@ -1,10 +1,16 @@
 # ASR_Speech-Recognition
 # speech2phoneme+grapheme_bangla
-Uses a self supervised model (Wav2Vec2) developed by Facebook to recognize speech from Bangla speech corpus. We incorporated both grapheme and phoneme as an input features. However, development is still going on.
+This repository is developed for the purpose of Bangla speech recognition using state-of-the-art NLP tecnique and model. We used a self supervised model (Wav2Vec2) developed by Facebook AI team to recognize speech from Bangla speech corpus. I incorporated both grapheme and phoneme as an input features. However, development is still going on. Wav2Vec 2.0 is one of the current state-of-the-art models for Automatic Speech Recognition due to a self-supervised training which is quite a new concept in this field.
 
-# Dataset
-The dataset to train the model should be under the trainable_dataset folder or any folder you can create to keep data. Inside the trainable_dataset folder we should have a train folder and valid folder. Inside these folders there should be audio files and rheir corresponding phoneme sequence inside a .txt file
+# I haven't used any open access dataset, I utilized custom dataset. If you want to use Common Voice/Bengali ASR data, you may change the data adapter, e.g., create a data loader and split your dataset into two/three folds: train, test and validation. However, I have experimented through train and validation data. 
 
-# Mlflow
-The training experiments are tracked using Mlflow.
-Run the mlflow server using the command mlflow server -h URL -p portnumber the code was written for the dev server on port 5000. So if you want to integrate the Mlflow, it would be better to setup your own URL. 
+
+# MlOps
+I integrated the mlflow tool to track the training history. MLflow is an MLOps tool that enables data scientist to quickly productionize their Machine Learning projects. To achieve this, MLFlow has four major components which are Tracking, Projects, Models, and Registry. MLflow lets you train, reuse, and deploy models with any library and package them into reproducible steps.
+
+# How to use?
+
+I have tested the code through VS code script file and notebook as well. It's better to use the VS code and you should have a high computing support other than that, you are gonna fail to run this model. To be more specific, this is a powerful speech recognization model.
+
+# Essential libraries
+-Pytorch, -Librosa, -Pandas, -Wav2Vec2 transformer,-CTC tokenizer
